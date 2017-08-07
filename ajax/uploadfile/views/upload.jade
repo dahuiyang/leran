@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(tpye='text/javascript',src='/javascripts/upload.js')
+  body
+    block content
+        //设置enctype=multipart/form-data
+        //form(action='/upload',method='post',enctype='multipart/form-data')
+        input(type='file',name='img')#img_file
+        button#upload_btn upload image
+        p#msg 选择要上传的文件
+
+

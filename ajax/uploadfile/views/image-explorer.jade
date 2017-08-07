@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(tpye='text/javascript',src='/javascripts/image-explorer.js')
+  body
+    block content
+      div.wrapper
+        div.hadder
+          button#pre_btn 上一张
+          button#next_btn 下一张
+        div.content
+          img#img
+
+
